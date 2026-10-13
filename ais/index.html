@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mengenal Hewan</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- TAMBAHAN JS: menyambungkan file script.js. "defer" = tunggu HTML selesai dimuat dulu -->
+    <script src="script-belajar.js" defer></script>
+
+    <style>
+      h1 {
+        font-size: 20px;
+        background-color: rgb(148, 188, 224);
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <header id="judul">
+      <h1>Mengenal Hewan</h1>
+
+      <!--Navigasi-->
+      <nav id="navigasi">
+        <a href="#">Home</a>
+        <a href="jenis.html">Jenis</a>
+        <a href="habitat.html">Habitat</a>
+        <a href="fakta.html">Fakta</a>
+        <!-- TAMBAHAN JS: tombol mode gelap -->
+        <button id="tombol-gelap">Mode Gelap</button>
+      </nav>
+    </header>
+
+    <!--Konten Utama-->
+    <main>
+      <!--Section-->
+      <section id="jenis">
+        <h2>Jenis Hewan</h2>
+
+        <!-- TAMBAHAN JS (Tantangan 2, opsional): kotak cari hewan -->
+        <input type="text" id="cari" placeholder="Cari hewan..." />
+
+        <!--article 1-->
+        <article>
+          <h3>Mengenal Elang</h3>
+          <figure>
+            <img src="images/elang.jpg" alt="" width="400" height="225" />
+            <figcaption>
+              Elang dapat ditemukan di hutan, pegunungan, pesisir, dan daerah
+              terbuka.
+            </figcaption>
+          </figure>
+
+          <p>
+            Elang adalah burung pemangsa yang memiliki penglihatan tajam, sayap
+            lebar, dan cakar yang kuat. <br />
+            Elang hidup di berbagai habitat dan memangsa hewan kecil seperti
+            ikan, burung, dan mamalia kecil.
+          </p>
+
+          <!-- TAMBAHAN JS: teks tambahan (disembunyikan dulu lewat class "sembunyi") -->
+          <p class="selengkapnya sembunyi">
+            Elang membuat sarang di pohon tinggi atau tebing. Beberapa jenis
+            elang di Indonesia, seperti Elang Jawa, termasuk satwa yang
+            dilindungi.
+          </p>
+
+          <!-- TAMBAHAN JS: tombol Suka dan Baca selengkapnya -->
+          <div class="aksi">
+            <button class="btn-suka">❤ Suka</button>
+            <span>Disukai <strong class="jumlah-suka">0</strong> kali</span>
+            <button class="btn-baca">Baca selengkapnya</button>
+          </div>
+        </article>
+
+        <!--article 2-->
+        <article>
+          <h3>Mengenal Kura-kura</h3>
+          <figure>
+            < <img src="images/kura.jpg" alt="" width="400" height="225" />
+            <figcaption>
+              Kura-kura dapat hidup di berbagai tempat, seperti darat, sungai,
+              dan laut, tergantung jenisnya.
+            </figcaption>
+          </figure>
+          <p>
+            Kura-kura adalah reptil yang memiliki tempurung keras untuk
+            melindungi tubuhnya. Kura-kura <br />
+            dapat hidup di darat maupun di air, tergantung jenisnya, dan umumnya
+            memakan tumbuhan serta hewan kecil.
+          </p>
+
+          <!-- TAMBAHAN JS: teks tambahan (disembunyikan dulu lewat class "sembunyi") -->
+          <p class="selengkapnya sembunyi">
+            Tempurung kura-kura menyatu dengan tulang punggung dan tulang
+            rusuknya, sehingga kura-kura tidak bisa keluar dari tempurungnya.
+            Beberapa jenis dapat hidup lebih dari 50 tahun.
+          </p>
+
+          <!-- TAMBAHAN JS: tombol Suka dan Baca selengkapnya -->
+          <div class="aksi">
+            <button class="btn-suka">❤ Suka</button>
+            <span>Disukai <strong class="jumlah-suka">0</strong> kali</span>
+            <button class="btn-baca">Baca selengkapnya</button>
+          </div>
+        </article>
+      </section>
+
+      <!--Aside/Sidebar-->
+      <aside>
+        <h2>Artikel Terkait</h2>
+        <ul>
+          <li><a href="#">Makanan hewan</a></li>
+          <li><a href="#">Cara berkembang biak</a></li>
+          <li><a href="#">Peran hewan di alam</a></li>
+        </ul>
+      </aside>
+
+      <!--Section Tentang-->
+      <section id="Tentang">
+        <h2>Tentang Mengenal Hewan</h2>
+
+        <div class="wrapper">
+          <p>
+            Mengenal Hewan adalah website yang berisi informasi tentang berbagai
+            jenis hewan, <br />
+            mulai dari ciri-ciri, habitat, makanan, hingga fakta menariknya.
+          </p>
+        </div>
+        <p>
+          Hewan adalah makhluk hidup yang memiliki berbagai bentuk, ukuran, dan
+          habitat. <br />
+          Setiap hewan memiliki ciri, makanan, serta cara hidup yang berbeda.
+        </p>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer id="kontak">
+      <h2>Kontak</h2>
+
+      <address class="alamat">
+        Email:
+        <a href="mailto:info@mengenalhewan">info@mengenalhewan</a>
+        <br />
+
+        Alamat: Jl.Taman Satwa No. 10,Surabaya
+      </address>
+
+      <p>&copy; 2026 mengenal Hewan</p>
+    </footer>
+  </body>
+</html>
